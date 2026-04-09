@@ -1,0 +1,132 @@
+/* IMPORTAÇÃO DE FONTE */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+/* CONFIGURAÇÕES GERAIS */
+body {
+    background-color: #f8f9fa; /* Fundo levemente cinza para destacar o conteúdo */
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #91b6edfb !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.9) !important;
+}
+
+.nav-link:hover {
+    color: white !important;
+    text-decoration: underline;
+}
+
+/* BANNER CARROSSEL */
+.carousel-item img {
+    height: 70vh; /* Diminuído para não ocupar a tela toda e esconder o conteúdo */
+    object-fit: cover;
+    filter: brightness(0.8); /* Escurece a foto para o texto branco ler melhor */
+}
+
+.carousel-caption {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: auto;
+    width: 80%;
+}
+
+.carousel-caption h5 {
+    font-size: clamp(1.5rem, 4vw, 3.5rem);
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.carousel-caption p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* CARDS */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+/* BOTÕES */
+.btn-primary {
+    background-color: #0389f7fb;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #0269c1;
+}
+
+/* RODAPÉ (FOOTER) */
+.card.text-center { /* Seletor do seu rodapé atual */
+    background-color: #91b6edfb !important;
+    color: white !important;
+    border-radius: 0;
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+.card.text-center .card-header, 
+.card.text-center .card-footer {
+    border: none;
+    background: transparent;
+}
+
+/* PÁGINA CONTATO */
+.container h2 {
+    color: #0389f7fb;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+form label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* SOBRE NÓS */
+.banner-sobre {
+    background-color: #91b6edfb;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+.texto-banner {
+    background: rgba(254, 177, 54, 0.849);
+    backdrop-filter: blur(5px); /* Efeito de vidro */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    display: inline-block;
+    padding: 40px;
+}
